@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SeeTheLight Luo · 创意空间</title>
+    <meta name="description" content="SeeTheLight Luo 的个人创意空间，记录灵感、项目与未来计划。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <header class="site-header">
+        <div class="logo">STL</div>
+        <nav>
+            <a href="#about">关于</a>
+            <a href="#timeline">求学经历</a>
+            <a href="#lab">灵感实验室</a>
+            <a href="#favorites">书影音</a>
+            <a href="#contact">联系</a>
+            <button id="theme-toggle" aria-label="切换明暗主题">◐</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="top">
+            <p class="eyebrow">SEETHELIGHTLUO · PERSONAL DOSSIER</p>
+            <h1>你好，我是 SeeTheLight Luo</h1>
+            <p class="lede">Born on 2005.04.18 in Jing'an District, Shanghai. A CS student who writes, codes, and documents everyday sparks of curiosity in both English and Chinese.</p>
+            <div class="hero-cta">
+                <a class="btn primary" href="#about">了解我 · Learn more</a>
+                <a class="btn ghost" href="#timeline">求学经历 · Education</a>
+            </div>
+            <ul class="stats">
+                <li><span>2005.04.18</span> 出生 | Date of Birth</li>
+                <li><span>上海 · 静安</span> 籍贯 | Hometown</li>
+                <li><span>CS</span> 中国科学技术大学 | USTC</li>
+            </ul>
+        </section>
+
+        <section class="panel" id="about">
+            <div class="panel-header">
+                <p class="eyebrow">关于我 · ABOUT</p>
+                <h2>把真实经历写进代码与故事</h2>
+            </div>
+            <div class="about-grid">
+                <article>
+                    <h3>身份 Identity</h3>
+                    <p>seethelightluo，来自上海，记录日常学习与创作。</p>
+                </article>
+                <article>
+                    <h3>兴趣 Interests</h3>
+                    <ul>
+                        <li>Computer Science · 人工智能与人机交互</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>价值观 Values</h3>
+                    <p>Bilingual curiosity, empathy-driven collaboration, and the belief that technology should keep stories warm.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" id="timeline">
+            <div class="panel-header">
+                <p class="eyebrow">求学经历 · EDUCATION</p>
+                <h2>时间轴 · Timeline</h2>
+            </div>
+            <div class="projects-grid">
+                <article>
+                    <div class="tag">2020 — 2023.06</div>
+                    <h3>上海市交通大学附属中学<br> High School Affiliated to Shanghai JiaoTong University </h3>
+                    <p>在这里打下数学、物理与计算思维的基础，塑造价值观和视野</p>
+                </article>
+                <article>
+                    <div class="tag">2023 — 至今</div>
+                    <h3>中国科学技术大学 · 计算机科学系<br>University of Science and Technology of China · CS</h3>
+                    <p>struggling to finish a bacholar degree and rebuild the world</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" id="lab">
+            <div class="panel-header">
+                <p class="eyebrow">日常标签 · SNAPSHOTS</p>
+                <h2>Daily scenes I care about</h2>
+            </div>
+            <div class="lab-list">
+                <article>
+                    <h3>Shanghai Roots · 上海根系</h3>
+                    <p>born and raised in Shanghai</p>
+                </article>
+                <article>
+                    <h3>CS Learner · 计算机系学生</h3>
+                    <p>把课程笔记同步为开放文档，用中英对照的方式帮助更多同学理解复杂概念。</p>
+                </article>
+                <article>
+                    <h3>Story + Code</h3>
+                    <p>Bilingual storytelling meets creative coding——支持多语叙事的网页实验与工具。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" id="favorites">
+            <div class="panel-header">
+                <p class="eyebrow">灵感书影音 · FAVORITES</p>
+                <h2>Stories & shows that shape me</h2>
+            </div>
+            <div class="lab-list">
+                <article>
+                    <h3>《刺杀骑士团长》 Killing Commendatore</h3>
+                </article>
+                <article>
+                    <h3>《雪国》 Snow Country</h3>
+                </article>
+                <article>
+                    <h3>The Simpsons · 辛普森一家</h3>
+                </article>
+                <article>
+                    <h3>Family Guy · 恶搞之家</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" id="contact">
+            <div class="panel-header">
+                <p class="eyebrow">联系 · CONTACT</p>
+                <h2>欢迎同好 · Always open for conversations</h2>
+            </div>
+            <form class="contact-form" data-netlify="true">
+                <label>
+                    姓名 / Name
+                    <input type="text" name="name" placeholder="你的名字 / Your name" required>
+                </label>
+                <label>
+                    邮箱 / Email
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                    留言 / Message
+                    <textarea name="message" rows="4" placeholder="分享你的想法或需求 / Share your ideas" required></textarea>
+                </label>
+                <button type="submit" class="btn primary">发送 / Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> SeeTheLight Luo · Crafted with curiosity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

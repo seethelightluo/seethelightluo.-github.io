@@ -1,160 +1,111 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
+    <title>罗翔心 - 个人简历</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SeeTheLight Luo · 创意空间</title>
-    <meta name="description" content="SeeTheLight Luo 的个人创意空间，记录灵感、项目与未来计划。">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="罗翔心个人简历">
+    <!-- FontAwesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Theme CSS -->  
     <link rel="stylesheet" href="styles.css">
-</head>
+</head> 
+
 <body>
-    <div class="noise"></div>
-    <header class="site-header">
-        <div class="logo">STL</div>
-        <nav>
-            <a href="#about">关于</a>
-            <a href="#timeline">求学经历</a>
-            <a href="#lab">灵感实验室</a>
-            <a href="#favorites">书影音</a>
-            <a href="#contact">联系</a>
-            <button id="theme-toggle" aria-label="切换明暗主题">◐</button>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="image.png" alt="罗翔心" />
+                <h1 class="name">罗翔心</h1>
+                <h3 class="tagline">计算机科学与技术</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <!-- Placeholder for contact info if needed -->
+                    <!-- <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: yourname@email.com">email@example.com</a></li> -->
+                </ul>
+            </div><!--//contact-container-->
+            
+            <div class="education-container container-block">
+                <h2 class="container-block-title">教育经历</h2>
+                <div class="item">
+                    <h4 class="degree">计算机科学与技术 (本科)</h4>
+                    <h5 class="meta">中国科学技术大学 (USTC)</h5>
+                    <div class="time">2023 - 2027 (预计)</div>
+                </div><!--//item-->
+                <div class="item">
+                    <h4 class="degree">高中</h4>
+                    <h5 class="meta">上海交通大学附属中学</h5>
+                    <div class="time">2020 - 2023</div>
+                </div><!--//item-->
+            </div><!--//education-container-->
+            
+        </div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>个人简介</h2>
+                <div class="summary">
+                    <p class="summary-name">罗翔心 <a href="https://github.com/seethelightluo" target="_blank" class="theme-link" style="font-size: 16px; font-weight: normal; margin-left: 10px;">github</a></p>
+                    <p>birth：2005.4.18</p>
+                </div><!--//summary-->
+            </section><!--//section-->
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>经历</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">中国科学技术大学认知智能重点实验室</h3>
+                            <div class="time">2025.9 - 2025.12</div>
+                        </div><!--//upper-row-->
+                        <div class="company">指导老师：谢洪</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>辅助博士生完成大模型上下文感知推理能力的研究实验</p>  
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">暑期交换</h3>
+                            <div class="time">2025.7 - 2025.8</div>
+                        </div><!--//upper-row-->
+                        <div class="company">得克萨斯大学奥斯汀分校 (UT Austin)</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>courses of JavaScript, Data mining</p>  
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+            </section><!--//section-->
 
-    <main>
-        <section class="hero" id="top">
-            <p class="eyebrow">SEETHELIGHTLUO · PERSONAL DOSSIER</p>
-            <h1>你好，我是 SeeTheLight Luo</h1>
-            <p class="lede">Born on 2005.04.18 in Jing'an District, Shanghai. A CS student who writes, codes, and documents everyday sparks of curiosity in both English and Chinese.</p>
-            <div class="hero-cta">
-                <a class="btn primary" href="#about">了解我 · Learn more</a>
-                <a class="btn ghost" href="#timeline">求学经历 · Education</a>
-            </div>
-            <ul class="stats">
-                <li><span>2005.04.18</span> 出生 | Date of Birth</li>
-                <li><span>上海 · 静安</span> 籍贯 | Hometown</li>
-                <li><span>CS</span> 中国科学技术大学 | USTC</li>
-            </ul>
-        </section>
-
-        <section class="panel" id="about">
-            <div class="panel-header">
-                <p class="eyebrow">关于我 · ABOUT</p>
-                <h2>把真实经历写进代码与故事</h2>
-            </div>
-            <div class="about-grid">
-                <article>
-                    <h3>身份 Identity</h3>
-                    <p>seethelightluo，来自上海，记录日常学习与创作。</p>
-                </article>
-                <article>
-                    <h3>兴趣 Interests</h3>
-                    <ul>
-                        <li>Computer Science · 人工智能与人机交互</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>价值观 Values</h3>
-                    <p>Bilingual curiosity, empathy-driven collaboration, and the belief that technology should keep stories warm.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="panel" id="timeline">
-            <div class="panel-header">
-                <p class="eyebrow">求学经历 · EDUCATION</p>
-                <h2>时间轴 · Timeline</h2>
-            </div>
-            <div class="projects-grid">
-                <article>
-                    <div class="tag">2020 — 2023.06</div>
-                    <h3>上海市交通大学附属中学<br> High School Affiliated to Shanghai JiaoTong University </h3>
-                    <p>在这里打下数学、物理与计算思维的基础，塑造价值观和视野</p>
-                </article>
-                <article>
-                    <div class="tag">2023 — 至今</div>
-                    <h3>中国科学技术大学 · 计算机科学系<br>University of Science and Technology of China · CS</h3>
-                    <p>struggling to finish a bacholar degree and rebuild the world</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="panel" id="lab">
-            <div class="panel-header">
-                <p class="eyebrow">日常标签 · SNAPSHOTS</p>
-                <h2>Daily scenes I care about</h2>
-            </div>
-            <div class="lab-list">
-                <article>
-                    <h3>Shanghai Roots · 上海根系</h3>
-                    <p>born and raised in Shanghai</p>
-                </article>
-                <article>
-                    <h3>CS Learner · 计算机系学生</h3>
-                    <p>把课程笔记同步为开放文档，用中英对照的方式帮助更多同学理解复杂概念。</p>
-                </article>
-                <article>
-                    <h3>Story + Code</h3>
-                    <p>Bilingual storytelling meets creative coding——支持多语叙事的网页实验与工具。</p>
-                </article>
-                <article>
-                    <h3>野比大雄 · Nobita Sketch</h3>
-                    <p><a href="20251129203847109.pdf" target="_blank" rel="noreferrer">打开 PDF</a>，记录童年角色带来的想象力。</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="panel" id="favorites">
-            <div class="panel-header">
-                <p class="eyebrow">灵感书影音 · FAVORITES</p>
-                <h2>Stories & shows that shape me</h2>
-            </div>
-            <div class="lab-list">
-                <article>
-                    <h3>《刺杀骑士团长》 Killing Commendatore</h3>
-                </article>
-                <article>
-                    <h3>《雪国》 Snow Country</h3>
-                </article>
-                <article>
-                    <h3>The Simpsons · 辛普森一家</h3>
-                </article>
-                <article>
-                    <h3>Family Guy · 恶搞之家</h3>
-                </article>
-            </div>
-        </section>
-
-        <section class="panel" id="contact">
-            <div class="panel-header">
-                <p class="eyebrow">联系 · CONTACT</p>
-                <h2>欢迎同好 · Always open for conversations</h2>
-            </div>
-            <form class="contact-form" data-netlify="true">
-                <label>
-                    姓名 / Name
-                    <input type="text" name="name" placeholder="你的名字 / Your name" required>
-                </label>
-                <label>
-                    邮箱 / Email
-                    <input type="email" name="email" placeholder="you@example.com" required>
-                </label>
-                <label>
-                    留言 / Message
-                    <textarea name="message" rows="4" placeholder="分享你的想法或需求 / Share your ideas" required></textarea>
-                </label>
-                <button type="submit" class="btn primary">发送 / Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© <span id="year"></span> SeeTheLight Luo · Crafted with curiosity.</p>
-    </footer>
-
-    <script src="script.js"></script>
+            <section class="section projects-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>项目</h2>
+                <div class="item">
+                    <span class="project-title"><a href="http://pension-app.azurewebsites.net/" target="_blank" class="theme-link">养老金计算</a></span>
+                    <div class="project-tagline">基于 .NET 8 的全栈项目</div>
+                    <div class="project-url" style="margin-top: 5px;"><a href="http://pension-app.azurewebsites.net/" target="_blank" class="theme-link">http://pension-app.azurewebsites.net/</a></div>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/seethelightluo/auto_bilingual_translation" target="_blank" class="theme-link">视频双语字幕生成</a></span>
+                    <div class="project-tagline">基于 OpenAI Whisper 和 Edge TTS 的端到端视频双语字幕生成与配音工具</div>
+                    <div class="project-url" style="margin-top: 5px;"><a href="https://github.com/seethelightluo/auto_bilingual_translation" target="_blank" class="theme-link">https://github.com/seethelightluo/auto_bilingual_translation</a></div>
+                </div><!--//item-->
+            </section><!--//section-->
+            
+        </div><!--//main-body-->
+    </div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by XiangxinLuo</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+        
 </body>
 </html>
